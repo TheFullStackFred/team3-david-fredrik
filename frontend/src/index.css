@@ -1,0 +1,15 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
