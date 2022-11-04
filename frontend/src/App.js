@@ -11,15 +11,20 @@ function App() {
         console.log('data', result)
       })
   }, [])
+
   return (
-    <div className='App'>
-      <ol>
+    data && (
+      <div className='App'>
+        {data[1].stage2.option1}
+        {/* <ol>
         {data?.map((story) => (
-          <li key={story._id}>{story.text}</li>
+          <li key={story._id}>{story.stage2.option1}</li>
         ))}
-      </ol>
-    </div>
+      </ol> */}
+      </div>
+    )
   )
 }
 
 export default App
+// data[1].stage2.option1
