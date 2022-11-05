@@ -1,30 +1,30 @@
 import { useState, useEffect } from 'react'
+
 function App() {
   const [data, setData] = useState(null)
 
-  //   Testing fetch from frontend and it works :)
+  const fetchStories = async () => {
+    const response = await fetch('http://localhost:8000/api/stories')
+    const data = await response.json()
+    setData(data)
+    console.log(data)
+  }
+
   useEffect(() => {
-    fetch('http://localhost:8000/api/stories')
-      .then((response) => response.json())
-      .then((result) => {
-        setData(result)
-        console.log('data', result)
-      })
+    fetchStories()
   }, [])
 
   return (
     data && (
       <div className='App'>
-        {data[1].stage2.option1}
-        {/* <ol>
-        {data?.map((story) => (
-          <li key={story._id}>{story.stage2.option1}</li>
-        ))}
-      </ol> */}
+        <ol>
+          {data?.map((story) => (
+            <li key={story._id}>{story.stage2.first}</li>
+          ))}
+        </ol>
       </div>
     )
   )
 }
 
 export default App
-// data[1].stage2.option1
