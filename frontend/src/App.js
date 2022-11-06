@@ -1,30 +1,21 @@
-import { useState, useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+// Pages & components import
+import Welcome from './pages/Welcome'
+import Home from './pages/Home'
 
 function App() {
-  const [data, setData] = useState(null)
-
-  const fetchStories = async () => {
-    const response = await fetch('http://localhost:8000/api/stories')
-    const data = await response.json()
-    setData(data)
-    console.log(data)
-  }
-
-  useEffect(() => {
-    fetchStories()
-  }, [])
-
   return (
-    data && (
-      <div className='App'>
-        <ol>
-          {data?.map((story) => (
-            <li key={story._id}>{story.stage2.first}</li>
-          ))}
-        </ol>
-      </div>
-    )
+    <div className='App'>
+      <BrowserRouter>
+        <div className='pages'>
+          <Routes>
+            <Route path='/' element={<Welcome />} />
+            <Route path='/home' element={<Home />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </div>
   )
 }
-
 export default App
