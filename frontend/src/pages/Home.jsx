@@ -5,7 +5,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchStories = async () => {
-      const response = await fetch('http://locaslhosst:8000/api/stories')
+      const response = await fetch('http://localhost:8000/api/stories')
       const json = await response.json()
       console.log(json)
 
@@ -27,7 +27,6 @@ const Home = () => {
               </div>
             ))
           : 'Something went wrong'}
-         
       </div>
     </div>
   )

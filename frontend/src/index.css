@@ -14,8 +14,16 @@ a {
   text-decoration: none;
 }
 
-/* Welcome */
+/* Welcome  */
+
 .welcome {
-  background: url('./images/book.png') no-repeat center center/contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #000;
+}
+
+.welcome .image {
   height: 100vh;
 }
