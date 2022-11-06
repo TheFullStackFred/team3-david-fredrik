@@ -13,3 +13,9 @@ body {
 a {
   text-decoration: none;
 }
+
+/* Welcome */
+.welcome {
+  background: url('./images/book.png') no-repeat center center/contain;
+  height: 100vh;
+}
