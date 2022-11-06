@@ -1,8 +1,6 @@
 import { AdvancedImage } from '@cloudinary/react'
 import { Cloudinary } from '@cloudinary/url-gen'
 
-import { fill } from '@cloudinary/url-gen/actions/resize'
-
 const Welcome = () => {
   const cld = new Cloudinary({
     cloud: {
