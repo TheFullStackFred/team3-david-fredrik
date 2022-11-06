@@ -42,7 +42,7 @@ const updateStory = asyncHandler(async (req, res) => {
   }
 })
 
-// Delete goal
+// Delete story
 // Delete /api/stories/:id
 const deleteStory = asyncHandler(async (req, res) => {
   const story = await Story.findById(req.params.id)
