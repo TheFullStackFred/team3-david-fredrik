@@ -1,5 +1,6 @@
 import { AdvancedImage } from '@cloudinary/react'
 import { Cloudinary } from '@cloudinary/url-gen'
+import { Link } from 'react-router-dom'
 
 const Welcome = () => {
   const cld = new Cloudinary({
@@ -12,8 +13,11 @@ const Welcome = () => {
 
   return (
     <div className='welcome'>
-      <div>
-        <AdvancedImage className='image' cldImg={myImage} />
+      <AdvancedImage className='image' cldImg={myImage} />
+      <div className='link'>
+        <Link to={'/home'}>
+          <button className='btn get-started-btn'>Get started</button>
+        </Link>
       </div>
     </div>
   )
