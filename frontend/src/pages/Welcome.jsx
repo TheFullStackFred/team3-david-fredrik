@@ -1,27 +1,18 @@
-import { AdvancedImage } from '@cloudinary/react'
-import { Cloudinary } from '@cloudinary/url-gen'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import CookieAccContext from '../CookieAccContext'
 import Cookies from '../components/Cookies'
+import CdnImage from '../components/CdnImage'
 
 const Welcome = () => {
   const cookieAcc = useContext(CookieAccContext)
-
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: 'dn8hfzpm2'
-    }
-  })
-
-  const myImage = cld.image('book_juxky0')
 
   return (
     <div className='welcome'>
       {!cookieAcc.accCookies && <Cookies />}
       {cookieAcc.accCookies && (
         <>
-          <AdvancedImage className='image' cldImg={myImage} />
+          <CdnImage />
           <div className='link'>
             {
               <Link to={'/home'}>

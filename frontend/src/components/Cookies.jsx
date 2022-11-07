@@ -4,7 +4,6 @@ import CookieAccContext from '../CookieAccContext'
 
 const Cookies = () => {
   const { accCookies, setAccCookies } = useContext(CookieAccContext)
-
   const [cookies, setCookie] = useCookies(['name'])
 
   const setCookies = () => {
@@ -16,12 +15,12 @@ const Cookies = () => {
       expires: expire
     })
   }
+
   return (
     <>
       <button
         className='btn'
         id='cookies-btn'
-        value={accCookies}
         onClick={() => {
           setCookies()
           setAccCookies(true)
