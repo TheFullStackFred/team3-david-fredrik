@@ -6,7 +6,7 @@ import CookieAccContext from '../CookieAccContext'
 import Cookies from '../components/Cookies'
 
 const Welcome = () => {
-  const value = useContext(CookieAccContext)
+  const cookieAcc = useContext(CookieAccContext)
 
   const cld = new Cloudinary({
     cloud: {
@@ -17,19 +17,21 @@ const Welcome = () => {
   const myImage = cld.image('book_juxky0')
 
   return (
-    <>
-      <div className='welcome'>
-        <Cookies />
-        {/* <AdvancedImage className='image' cldImg={myImage} />
-        <div className='link'>
-          {
-            <Link to={'/home'}>
-              <button className='btn get-started-btn'>Get started</button>
-            </Link>
-          }
-        </div> */}
-      </div>
-    </>
+    <div className='welcome'>
+      {!cookieAcc.accCookies && <Cookies />}
+      {cookieAcc.accCookies && (
+        <>
+          <AdvancedImage className='image' cldImg={myImage} />
+          <div className='link'>
+            {
+              <Link to={'/home'}>
+                <button className='btn get-started-btn'>Get started</button>
+              </Link>
+            }
+          </div>
+        </>
+      )}
+    </div>
   )
 }
 
