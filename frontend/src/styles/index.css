@@ -23,7 +23,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: #000;
+  /* background: #000; */
 }
 
 .welcome .image {
@@ -48,4 +48,8 @@ a {
   color: #000;
   font-family: 'Finger Paint', cursive;
   font-size: 30px;
+}
+
+#cookies-btn {
+  position: absolute;
 }

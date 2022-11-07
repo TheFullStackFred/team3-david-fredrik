@@ -21,5 +21,7 @@ app.use('/api/stories', require('./routes/storyRoutes'))
 app.use(errorHandler)
 
 app.listen(port, () =>
-  console.log(` ${serverMessage.yellow} ${messageArrow.white} ${port.bold.red}`)
+  console.log(
+    `  ${serverMessage.yellow} ${messageArrow.white} ${port.bold.red}`
+  )
 )
