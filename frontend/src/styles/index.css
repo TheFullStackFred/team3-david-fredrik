@@ -11,6 +11,7 @@
 /* Global */
 body {
   height: 100vh;
+  background: #000;
 }
 
 a {
@@ -23,7 +24,6 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  /* background: #000; */
 }
 
 .welcome .image {
@@ -52,4 +52,7 @@ a {
 
 #cookies-btn {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

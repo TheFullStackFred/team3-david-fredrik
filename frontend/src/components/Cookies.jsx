@@ -1,11 +1,9 @@
 import { useCookies } from 'react-cookie'
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import CookieAccContext from '../CookieAccContext'
 
 const Cookies = () => {
   const { accCookies, setAccCookies } = useContext(CookieAccContext)
-
-  console.log(accCookies)
 
   const [cookies, setCookie] = useCookies(['name'])
 
@@ -23,12 +21,13 @@ const Cookies = () => {
       <button
         className='btn'
         id='cookies-btn'
+        value={accCookies}
         onClick={() => {
           setCookies()
           setAccCookies(true)
         }}
       >
-        Cookies
+        Accept Cookies
       </button>
     </>
   )
