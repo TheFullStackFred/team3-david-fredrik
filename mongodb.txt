@@ -1,0 +1,22 @@
+  mongo structure example
+  {
+  "stage1": {
+    "first": "once upon a time",
+  },
+  "stage2": {
+    "first": "Adam went to church",
+    "second": "Adam went on holiday",
+    "third": "Adam went to confessional",
+    "fourth": "Adam went to a wedding",
+    "fifth": "Adam went to Bankgkok"
+  },
+  "stage3": {
+    "first": "Then Adam become hungry",
+    "second": "Adam feelt poopy"
+    "third": "Adam looked at"
+  },
+  "stage4": {
+    "first": "Adam......",
+    "second": "Adam......"
+  }
+  }
