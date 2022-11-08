@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 
 const Home = () => {
   const [stories, setStories] = useState(null)
+  const [desc, setDesc] = useState('')
 
   useEffect(() => {
     const fetchStories = async () => {
@@ -17,13 +18,24 @@ const Home = () => {
     fetchStories()
   }, [])
 
+  const handleState = (e) => {
+    // console.log(e.currentTarget.innerText)
+    console.log(desc)
+  }
+
   return (
     <div className='home'>
       <div className='stories'>
         {stories
           ? stories?.map((story) => (
               <div className='story' key={story._id}>
-                <h2>{story.stage1.first}</h2>
+                <h2
+                  onClick={(e) =>
+                    handleState(setDesc(e.currentTarget.innerText))
+                  }
+                >
+                  {story.stage1.first}
+                </h2>
               </div>
             ))
           : 'Something went wrong'}
