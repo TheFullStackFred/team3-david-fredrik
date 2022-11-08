@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import CookieAccContext from '../CookieAccContext'
 import Cookies from '../components/Cookies'
-// import CdnImage from '../components/CdnImage'
+import CdnImage from '../components/CdnImage'
 
 const Welcome = () => {
   const cookieAcc = useContext(CookieAccContext)
@@ -12,7 +12,7 @@ const Welcome = () => {
       {!cookieAcc.accCookies && <Cookies />}
       {cookieAcc.accCookies && (
         <>
-          {/* <CdnImage /> */}
+          <CdnImage />
           <div className='link'>
             {
               <Link to={'/home'}>
