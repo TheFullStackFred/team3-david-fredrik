@@ -1,26 +1,23 @@
 [
     {
-        "stage1": "Once upon a time1",
-        "stage2": "Adam went to Hawai",
-        "stage3": "Adam went out from his apartment",
-        "stage4": "Adam had some taco"
+        "stage1": "Once upon a time",
+        "stage2": "in a land far far away",
+        "stage3": "a guy called Adam",
+        "stage4": "had some taco"
     },
     {
-        "stage1": "Once upon a time2",
-        "stage2": "Adam went to Hawai",
-        "stage3": "Adam went out from his apartment",
-        "stage4": "Adam had some taco"
+        "stage2": "in a kingdom",
+        "stage3": "a boy called Adam",
+        "stage4": "watch the telly"
     },
     {
-        "stage1": "Once upon a time3",
-        "stage2": "Adam went to Hawai",
-        "stage3": "Adam went out from his apartment",
-        "stage4": "Adam had some taco"
+        "stage2": "in an apartment in Frölunda",
+        "stage3": "a prince called Adam",
+        "stage4": "stayed home"
     },
     {
-        "stage1": "Once upon a time4",
-        "stage2": "Adam went to Hawai",
-        "stage3": "Adam went out from his apartment",
-        "stage4": "Adam had some taco"
+        "stage2": "in a car",
+        "stage3": "a frog called Adam",
+        "stage4": "hang out with FatStack"
     }
 ]
