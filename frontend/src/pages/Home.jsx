@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 
 const Home = () => {
   const [stories, setStories] = useState(null)
-  const [desc, setDesc] = useState('')
 
   useEffect(() => {
     const fetchStories = async () => {
@@ -15,13 +14,9 @@ const Home = () => {
       }
     }
 
+    localStorage.clear()
     fetchStories()
   }, [])
-
-  const handleState = (e) => {
-    // console.log(e.currentTarget.innerText)
-    console.log(desc)
-  }
 
   return (
     <div className='home'>
@@ -30,8 +25,14 @@ const Home = () => {
           ? stories?.map((story) => (
               <div className='story-card' key={story._id}>
                 <h2
+                  //   onClick={(e) =>
+                  //     handleState(setStage1(e.currentTarget.innerText))
+                  //   }
                   onClick={(e) =>
-                    handleState(setDesc(e.currentTarget.innerText))
+                    localStorage.setItem(
+                      'story',
+                      JSON.stringify(e.currentTarget.innerText)
+                    )
                   }
                 >
                   {story.stage1.first}
@@ -40,6 +41,23 @@ const Home = () => {
             ))
           : 'Something went wrong'}
       </div>
+
+      {stories
+        ? stories?.map((story) => (
+            <div className='story-card' key={story._id}>
+              <h2
+                onClick={(e) =>
+                  localStorage.setItem(
+                    'story',
+                    JSON.stringify(e.currentTarget.innerText)
+                  )
+                }
+              >
+                {story.stage1.first}
+              </h2>
+            </div>
+          ))
+        : 'Something went wrong'}
     </div>
   )
 }
