@@ -1,22 +1,60 @@
-  mongo structure example
-  {
+
+{
+    "stage1": {
+      "first": "Once upon a time, a guy called Adam..."
+    },
+    "stage2": {
+      "first": "went to the cabin",
+      "second": "went on holiday",
+      "third": "went to a seance",
+      "fourth": "went to a wedding",
+      "fith": "went to Park  Lane",
+      "sixth": "went to church",
+      "seventh": "went to an art gallery",
+      "eigth": "went to a yoga retreat"
+    },
+    "stage3": {
+      "first": "Adam asked for her SnapChat",
+      "second": "Adam was feeling hungry",
+      "third": "Adam danced the YMCA",
+      "fourth": "Adam took a pill in Ibiza",
+      "fith": "Adam confessed his sins",
+      "sixth": "Adam heard a noise in the night",
+      "seventh": "Adam sharted",
+      "eigth": "Adam talked to the spirits",
+      "ninth": "Adam talked to the spirits"
+    },
+      "stage4":{
+          "first": "Adam eat McDonalds before he went home",
+          "second": "to be continued",
+          "third": "third"
+    }
+  }
+
+
+<------------------------------------->
+{
   "stage1": {
-    "first": "once upon a time.....",
+    "first": "Once upon a time"
   },
   "stage2": {
-    "first": "Adam went to church",
+    "first": "Adam went to the cabin",
     "second": "Adam went on holiday",
-    "third": "Adam went to confessional",
+    "third": "Adam went to a seance",
     "fourth": "Adam went to a wedding",
-    "fifth": "Adam went to Bankgkok"
+    "fith": "Adam went to Park  Lane",
+    "sixth": "Adam went to church"
   },
   "stage3": {
-    "first": "Then Adam become hungry",
-    "second": "Adam feelt poopy"
-    "third": "Adam looked at"
-  },
-  "stage4": {
-    "first": "Adam......",
-    "second": "Adam......"
+    "first": "Adam went to a stripclub",
+    "second": "Adam went to an art gallery",
+    "third": "Adam danced the YMCA",
+    "fourth": "Adam took a pill in Ibiza",
+    "fith": "Adam confessed his sins",
+    "sixth": "Adam heard a noise in the night",
+    "seventh": "Adam went to a yoga retreat",
+    "eigth": "Adam sharted",
+    "ninth": "Adam talked to the spirits",
+    "tenth": "Adam asked for her SnapChat"
   }
-  }
+}

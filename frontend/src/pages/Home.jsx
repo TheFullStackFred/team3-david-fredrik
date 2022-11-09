@@ -8,7 +8,7 @@ const Home = () => {
     const fetchStories = async () => {
       const response = await fetch('http://localhost:8000/api/stories')
       const json = await response.json()
-      console.log(json)
+      console.log('Stories', json)
 
       if (response.ok) {
         setStories(json)
@@ -25,10 +25,10 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <div className='stories'>
+      <div className='story-card'>
         {stories
           ? stories?.map((story) => (
-              <div className='story' key={story._id}>
+              <div className='story-card' key={story._id}>
                 <h2
                   onClick={(e) =>
                     handleState(setDesc(e.currentTarget.innerText))

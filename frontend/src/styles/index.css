@@ -9,9 +9,11 @@
 }
 
 /* Global */
+
 body {
   height: 100vh;
-  /* background: #000; */
+  background: #000;
+  color: #fafafa;
 }
 
 a {
@@ -55,4 +57,11 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Home */
+.home {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 }
