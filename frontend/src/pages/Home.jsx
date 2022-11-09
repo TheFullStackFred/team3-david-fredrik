@@ -6,8 +6,6 @@ const Home = () => {
   const [isHidden2, setIsHidden2] = useState(false)
   const [stage1] = useState(JSON.parse(localStorage.getItem('stage1')))
   const [stage2] = useState(JSON.parse(localStorage.getItem('stage2')))
-  const [stage3] = useState(JSON.parse(localStorage.getItem('stage3')))
-  const [stage4] = useState(JSON.parse(localStorage.getItem('stage4')))
 
   useEffect(() => {
     const fetchStories = async () => {
