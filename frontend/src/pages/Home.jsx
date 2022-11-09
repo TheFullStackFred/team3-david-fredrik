@@ -40,7 +40,7 @@ const Home = () => {
                       setIsHidden2(true)
                     }}
                   >
-                    {story.stage1.first}
+                    {story.stage1}
                   </h2>
                 )
               })
@@ -51,20 +51,19 @@ const Home = () => {
       {isHidden2 && (
         <div className='story-card'>
           {stories
-            ? stories?.map((story) => {
+            ? stories.stage2.map((story) => {
                 return (
-                  <div className='story-card' key={story._id}>
-                    <h2
-                      onClick={(e) =>
-                        localStorage.setItem(
-                          'stage2',
-                          JSON.stringify(e.currentTarget.innerText)
-                        )
-                      }
-                    >
-                      {story.stage2.first}
-                    </h2>
-                  </div>
+                  <h2
+                    key={story._id}
+                    onClick={(e) =>
+                      localStorage.setItem(
+                        'stage2',
+                        JSON.stringify(e.currentTarget.innerText)
+                      )
+                    }
+                  >
+                    {story.options}
+                  </h2>
                 )
               })
             : 'Something went wrong'}
