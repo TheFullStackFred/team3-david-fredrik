@@ -1,0 +1,13 @@
+{
+"stage1": {
+    "first": "once upon a time 1",
+    "second": "once upon a time 2"
+  },
+  "stage2": {
+    "first": "adam went home",
+    "second": "adam went to pornclub"
+  },
+  "stage3": {
+    "first": "adam went home",
+    "second": "adam went to pornclub"
+}
