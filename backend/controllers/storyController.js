@@ -5,7 +5,7 @@ const Story = require('../models/storyModel')
 // Get stories
 // GET /api/stories
 const getStories = asyncHandler(async (req, res) => {
-  const stories = await Story.find()
+  const stories = await Story.find({})
   res.status(200).json(stories)
 })
 
