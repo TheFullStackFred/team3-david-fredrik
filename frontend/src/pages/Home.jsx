@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 
 const Home = () => {
   const [stories, setStories] = useState(null)
-  const [desc, setDesc] = useState('')
+  const [stage1] = useState(JSON.parse(localStorage.getItem('stage1')))
+  const [stage2] = useState(JSON.parse(localStorage.getItem('stage2')))
 
   useEffect(() => {
     const fetchStories = async () => {
@@ -15,31 +16,54 @@ const Home = () => {
       }
     }
 
+    localStorage.clear()
     fetchStories()
   }, [])
-
-  const handleState = (e) => {
-    // console.log(e.currentTarget.innerText)
-    console.log(desc)
-  }
 
   return (
     <div className='home'>
       <div className='story-card'>
         {stories
-          ? stories?.map((story) => (
-              <div className='story-card' key={story._id}>
-                <h2
-                  onClick={(e) =>
-                    handleState(setDesc(e.currentTarget.innerText))
-                  }
-                >
-                  {story.stage1.first}
-                </h2>
-              </div>
-            ))
+          ? stories?.map((story) => {
+              return (
+                <div className='story-card' key={story._id}>
+                  <h2
+                    onClick={(e) =>
+                      localStorage.setItem(
+                        'stage1',
+                        JSON.stringify(e.currentTarget.innerText)
+                      )
+                    }
+                  >
+                    {story.stage1.first}
+                  </h2>
+                </div>
+              )
+            })
           : 'Something went wrong'}
       </div>
+      <div className='story-card'>
+        {stories
+          ? stories?.map((story) => {
+              return (
+                <div className='story-card' key={story._id}>
+                  <h2
+                    onClick={(e) =>
+                      localStorage.setItem(
+                        'stage2',
+                        JSON.stringify(e.currentTarget.innerText)
+                      )
+                    }
+                  >
+                    {story.stage2.first}
+                  </h2>
+                </div>
+              )
+            })
+          : 'Something went wrong'}
+      </div>
+      <h1>{stage1}</h1>
+      <h2>{stage2}</h2>
     </div>
   )
 }

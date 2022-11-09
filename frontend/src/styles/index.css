@@ -9,7 +9,6 @@
 }
 
 /* Global */
-
 body {
   height: 100vh;
   background: #000;
@@ -62,6 +61,13 @@ a {
 /* Home */
 .home {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   flex-direction: column;
+}
+
+.story-card {
+  border: 2px solid yellow;
+  cursor: pointer;
 }
