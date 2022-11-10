@@ -3,21 +3,44 @@
         "stage1": "Once upon a time",
         "stage2": "in a land far far away",
         "stage3": "a guy called Adam",
-        "stage4": "had some taco"
+        "stage4": "had some taco",
+        "stage5": "the end"
     },
-    {
+    {   "stage1": "Let me tell you the story of",
         "stage2": "in a kingdom",
         "stage3": "a boy called Adam",
-        "stage4": "watch the telly"
+        "stage4": "watch the telly",
+        "stage5": "and they lived happily ever after"
     },
     {
         "stage2": "in an apartment in Frölunda",
         "stage3": "a prince called Adam",
-        "stage4": "stayed home"
+        "stage4": "stayed home",
+        "stage5": "to be continued"
     },
     {
         "stage2": "in a car",
         "stage3": "a frog called Adam",
         "stage4": "hang out with FatStack"
+    },
+    {
+        "stage2": "a fine young man called Mahdi",
+        "stage3": "and he loves to benchpress",
+        "stage4": "and chasing girls"
+    },
+    {
+        "stage2": "of an enthusistic web developer named Mahdi",
+        "stage3": "he enjoys eating protein bars",
+        "stage4": "and Pokemon Go!"
+    },
+    {
+        "stage2": "a playboy called Adam",
+        "stage3": "and he can't help swiping right on Tinder",
+        "stage4": "and show off his biceps"
+    },
+    {
+        "stage2": "a charming geezer who goes by the name Mahdi",
+        "stage3": "enjoys playing Minecraft",
+        "stage4": "and going clubbing"
     }
 ]
