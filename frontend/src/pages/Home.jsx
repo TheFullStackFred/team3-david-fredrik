@@ -23,11 +23,12 @@ const Home = () => {
   }, [])
 
   return (
-    <div className='home'>
+    <div className="home">
       {!isHidden1 && (
-        <div className='story-card'>
+        <div className="story-card">
           {stories
             ? stories?.map((story) => {
+                if (!story.stage1) return null
                 return (
                   <h2
                     key={story._id}
@@ -49,7 +50,7 @@ const Home = () => {
       )}
 
       {isHidden2 && (
-        <div className='story-card'>
+        <div className="story-card">
           {stories
             ? stories.map((story) => {
                 return (
