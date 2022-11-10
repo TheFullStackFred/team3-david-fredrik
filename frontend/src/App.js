@@ -19,12 +19,12 @@ function App() {
 
   return (
     <CookieAccContext.Provider value={{ accCookies, setAccCookies }}>
-      <div className='App'>
+      <div className="App">
         <BrowserRouter>
-          <div className='pages'>
+          <div className="pages">
             <Routes>
-              <Route path='/' element={<Welcome />} />
-              <Route path='/home' element={<Home />} />
+              <Route path="/" element={<Welcome />} />
+              <Route path="/home" element={<Home />} />
             </Routes>
           </div>
         </BrowserRouter>
