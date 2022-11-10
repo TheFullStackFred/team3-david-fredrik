@@ -68,7 +68,10 @@ a {
   flex-direction: column;
 }
 
-.story-card {
+.story-card h2 {
   border: 2px solid yellow;
   cursor: pointer;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
 }
