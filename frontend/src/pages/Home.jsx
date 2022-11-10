@@ -51,7 +51,7 @@ const Home = () => {
       {isHidden2 && (
         <div className='story-card'>
           {stories
-            ? stories.stage2.map((story) => {
+            ? stories.map((story) => {
                 return (
                   <h2
                     key={story._id}
