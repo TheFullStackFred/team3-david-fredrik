@@ -118,7 +118,7 @@ const Home = () => {
                     key={story._id}
                     onClick={(e) => {
                       localStorage.setItem(
-                        'stage3',
+                        'stage4',
                         JSON.stringify(e.currentTarget.innerText)
                       )
                       setIsHidden4(true)
@@ -144,7 +144,7 @@ const Home = () => {
                     key={story._id}
                     onClick={(e) => {
                       localStorage.setItem(
-                        'stage3',
+                        'stage5',
                         JSON.stringify(e.currentTarget.innerText)
                       )
                       setIsHidden5(true)
