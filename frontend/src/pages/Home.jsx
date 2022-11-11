@@ -7,8 +7,13 @@ const Home = () => {
   const [isHidden3, setIsHidden3] = useState(true)
   const [isHidden4, setIsHidden4] = useState(true)
   const [isHidden5, setIsHidden5] = useState(true)
+  const [btnVisible, setbtnVisible] = useState(false)
+  const [storyVisible, setStoryvisible] = useState(false)
   const stage1 = JSON.parse(localStorage.getItem('stage1'))
   const stage2 = JSON.parse(localStorage.getItem('stage2'))
+  const stage3 = JSON.parse(localStorage.getItem('stage3'))
+  const stage4 = JSON.parse(localStorage.getItem('stage4'))
+  const stage5 = JSON.parse(localStorage.getItem('stage5'))
 
   useEffect(() => {
     const fetchStories = async () => {
@@ -143,6 +148,7 @@ const Home = () => {
                         JSON.stringify(e.currentTarget.innerText)
                       )
                       setIsHidden5(true)
+                      setbtnVisible(true)
                     }}
                   >
                     {story.stage5}
@@ -150,6 +156,25 @@ const Home = () => {
                 )
               })
             : 'Something went wrong'}
+        </div>
+      )}
+      {btnVisible && (
+        <button
+          className="btn"
+          onClick={() => {
+            setbtnVisible(false)
+            setStoryvisible(true)
+          }}
+        >
+          See your story
+        </button>
+      )}
+
+      {storyVisible && (
+        <div className="story-card story-card-last">
+          <h2>
+            {stage1} {stage2} {stage3} {stage4} {stage5}
+          </h2>
         </div>
       )}
     </div>
