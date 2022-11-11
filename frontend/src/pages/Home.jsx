@@ -3,7 +3,10 @@ import { useEffect, useState } from 'react'
 const Home = () => {
   const [stories, setStories] = useState(null)
   const [isHidden1, setIsHidden1] = useState(false)
-  const [isHidden2, setIsHidden2] = useState(false)
+  const [isHidden2, setIsHidden2] = useState(true)
+  const [isHidden3, setIsHidden3] = useState(true)
+  const [isHidden4, setIsHidden4] = useState(true)
+  const [isHidden5, setIsHidden5] = useState(true)
   const stage1 = JSON.parse(localStorage.getItem('stage1'))
   const stage2 = JSON.parse(localStorage.getItem('stage2'))
 
@@ -24,6 +27,7 @@ const Home = () => {
 
   return (
     <div className="home">
+      {/* Stage 1 */}
       {!isHidden1 && (
         <div className="story-card">
           {stories
@@ -38,7 +42,7 @@ const Home = () => {
                         JSON.stringify(e.currentTarget.innerText)
                       )
                       setIsHidden1(true)
-                      setIsHidden2(true)
+                      setIsHidden2(false)
                     }}
                   >
                     {story.stage1}
@@ -49,21 +53,24 @@ const Home = () => {
         </div>
       )}
 
-      {isHidden2 && (
+      {/* Stage 2 */}
+      {!isHidden2 && (
         <div className="story-card">
           {stories
             ? stories.map((story) => {
                 return (
                   <h2
                     key={story._id}
-                    onClick={(e) =>
+                    onClick={(e) => {
                       localStorage.setItem(
                         'stage2',
                         JSON.stringify(e.currentTarget.innerText)
                       )
-                    }
+                      setIsHidden2(true)
+                      setIsHidden3(false)
+                    }}
                   >
-                    {story.options}
+                    {story.stage2}
                   </h2>
                 )
               })
@@ -71,8 +78,80 @@ const Home = () => {
         </div>
       )}
 
-      <h1>{stage1}</h1>
-      <h2>{stage2}</h2>
+      {/* Stage 3 */}
+      {!isHidden3 && (
+        <div className="story-card">
+          {stories
+            ? stories.map((story) => {
+                return (
+                  <h2
+                    key={story._id}
+                    onClick={(e) => {
+                      localStorage.setItem(
+                        'stage3',
+                        JSON.stringify(e.currentTarget.innerText)
+                      )
+                      setIsHidden3(true)
+                      setIsHidden4(false)
+                    }}
+                  >
+                    {story.stage3}
+                  </h2>
+                )
+              })
+            : 'Something went wrong'}
+        </div>
+      )}
+
+      {/* Stage 4 */}
+      {!isHidden4 && (
+        <div className="story-card">
+          {stories
+            ? stories.map((story) => {
+                return (
+                  <h2
+                    key={story._id}
+                    onClick={(e) => {
+                      localStorage.setItem(
+                        'stage3',
+                        JSON.stringify(e.currentTarget.innerText)
+                      )
+                      setIsHidden4(true)
+                      setIsHidden5(false)
+                    }}
+                  >
+                    {story.stage4}
+                  </h2>
+                )
+              })
+            : 'Something went wrong'}
+        </div>
+      )}
+
+      {/* Stage 5 */}
+      {!isHidden5 && (
+        <div className="story-card">
+          {stories
+            ? stories.map((story) => {
+                if (!story.stage5) return null
+                return (
+                  <h2
+                    key={story._id}
+                    onClick={(e) => {
+                      localStorage.setItem(
+                        'stage3',
+                        JSON.stringify(e.currentTarget.innerText)
+                      )
+                      setIsHidden5(true)
+                    }}
+                  >
+                    {story.stage5}
+                  </h2>
+                )
+              })
+            : 'Something went wrong'}
+        </div>
+      )}
     </div>
   )
 }
