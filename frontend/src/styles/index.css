@@ -69,12 +69,14 @@ a {
 }
 
 .story-card h2 {
-  border: 2px solid #e6521c;
+  /* border: 2px solid transparent; */
   cursor: pointer;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  margin: 10px;
+  margin: 25px;
+  box-shadow: 3px 3px 10px #e6521c, -3px -3px 10px #e6521c,
+    inset 3px 3px 10px #e6521c, -3px 3px 10px #e6521c;
 }
 
 .story-card-last h2 {
