@@ -19,8 +19,7 @@ const Cookies = () => {
   return (
     <>
       <button
-        className='btn'
-        id='cookies-btn'
+        className="btn btn-animate1"
         onClick={() => {
           setCookies()
           setAccCookies(true)

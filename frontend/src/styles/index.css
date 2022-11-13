@@ -1,3 +1,7 @@
+:root {
+  --animate-speed: 2s;
+}
+
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
@@ -51,12 +55,16 @@ a {
   font-size: 30px;
 }
 
-#cookies-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.btn-animate1 {
   letter-spacing: 1px;
+  transform: translateY(-1200px);
+  animation: animate1 var(--animate-speed) forwards ease-in;
+}
+
+@keyframes animate1 {
+  to {
+    transform: translateY(350px);
+  }
 }
 
 /* Home */
@@ -65,7 +73,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .story-card h2 {
@@ -80,4 +88,20 @@ a {
 
 .story-card-last h2 {
   cursor: unset;
+}
+
+.btn-see-story {
+  transform: translateY(350px);
+}
+
+.btn-animate2 {
+  letter-spacing: 1px;
+  transform: translateX(-1200px);
+  animation: animate2 var(--animate-speed) forwards ease-in;
+}
+
+@keyframes animate2 {
+  to {
+    transform: translateX(0px);
+  }
 }

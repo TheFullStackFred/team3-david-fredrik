@@ -160,7 +160,7 @@ const Home = () => {
       )}
       {btnVisible && (
         <button
-          className="btn"
+          className="btn btn-animate2"
           onClick={() => {
             setbtnVisible(false)
             setStoryvisible(true)
