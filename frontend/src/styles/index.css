@@ -96,7 +96,7 @@ a {
 
 .btn-animate2 {
   letter-spacing: 1px;
-  transform: translateX(-1200px);
+  transform: translateX(-1800px);
   animation: animate2 var(--animate-speed) forwards ease-in;
 }
 
