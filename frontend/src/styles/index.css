@@ -63,7 +63,7 @@ a {
 
 @keyframes animate1 {
   to {
-    transform: translateY(350px);
+    transform: translateY(450px);
   }
 }
 
