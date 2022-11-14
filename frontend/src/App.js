@@ -3,6 +3,7 @@ import { useState } from 'react'
 import CookieAccContext from './CookieAccContext'
 import Welcome from './pages/Welcome'
 import Home from './pages/Home'
+import HamburgerMenu from './components/HamburgerMenu'
 import LogRocket from 'logrocket'
 
 LogRocket.init('eifezl/team3-david-fredrik')
@@ -21,9 +22,12 @@ function App() {
     <CookieAccContext.Provider value={{ accCookies, setAccCookies }}>
       <div className="App">
         <BrowserRouter>
+          <HamburgerMenu />
           <Routes>
             <Route path="/" element={<Welcome />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/about"></Route>
+            <Route path="/contact"></Route>
             <Route path="*" element={<h1>404 - Not found</h1>} />
           </Routes>
         </BrowserRouter>
