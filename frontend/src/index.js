@@ -4,14 +4,17 @@ import './styles/index.css'
 import './styles/utilities.css'
 import App from './App'
 import { CookiesProvider } from 'react-cookie'
+import { BrowserRouter } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <CookiesProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <BrowserRouter>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </BrowserRouter>
   </CookiesProvider>
 )
 

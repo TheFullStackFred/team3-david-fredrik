@@ -23,7 +23,8 @@
     "express-async-handler": "^1.2.0",
     "logrocket": "^3.0.1",
     "mongoose": "^6.7.1",
-    "react-cookie": "^4.1.1"
+    "react-cookie": "^4.1.1",
+    "react-icons": "^4.6.0"
   },
   "devDependencies": {
     "concurrently": "^7.5.0",
