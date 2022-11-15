@@ -10,15 +10,15 @@ const Sidebar = () => {
   const showSidebar = () => setSidebar(!sidebar)
   const sideMenu = [
     {
-      title: 'Home',
-      path: '/home',
-      icon: <AiIcons.AiOutlineHome />,
-      className: 'sidebar-text'
-    },
-    {
       title: 'Welcome',
       path: '/',
       icon: <FiIcons.FiBookOpen />,
+      className: 'sidebar-text'
+    },
+    {
+      title: 'Home',
+      path: '/home',
+      icon: <AiIcons.AiOutlineHome />,
       className: 'sidebar-text'
     },
     {

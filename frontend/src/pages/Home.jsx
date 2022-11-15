@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 let storys = []
 
@@ -160,6 +161,9 @@ const Home = () => {
             {storys[3] + ' '}
             {storys[4] + ' '}
           </h2>
+          <Link to={'/'}>
+            <button className="btn new-story">Create a new story</button>
+          </Link>
         </div>
       )}
     </div>
