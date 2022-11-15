@@ -1,9 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
 import CookieAccContext from './CookieAccContext'
 import Welcome from './pages/Welcome'
 import Home from './pages/Home'
-import HamburgerMenu from './components/HamburgerMenu'
+import AboutUs from './pages/AboutUs'
+import Contact from './pages/Contact'
+import Sidebar from './components/Sidebar'
+import NotFound from './pages/NotFound'
 import LogRocket from 'logrocket'
 
 LogRocket.init('eifezl/team3-david-fredrik')
@@ -15,23 +18,29 @@ LogRocket.identify('eifezl/team3-david-fredrik', {
   subscriptionType: 'pro'
 })
 
+/*const AppSidebar = () => (
+  <>
+    <Sidebar />
+    <Outlet />
+  </>
+)
+*/
+
 function App() {
   const [accCookies, setAccCookies] = useState(false)
 
   return (
     <CookieAccContext.Provider value={{ accCookies, setAccCookies }}>
       <div className="App">
-        <BrowserRouter>
-          <HamburgerMenu />
+          <Sidebar />
           <Routes>
             <Route path="/" element={<Welcome />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/about"></Route>
-            <Route path="/contact"></Route>
-            <Route path="*" element={<h1>404 - Not found</h1>} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
-        </BrowserRouter>
-      </div>
+        </div>
     </CookieAccContext.Provider>
   )
 }
