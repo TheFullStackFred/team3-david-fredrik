@@ -14,17 +14,8 @@ LogRocket.identify('eifezl/team3-david-fredrik', {
   name: 'Adam',
   email: 'adam@example.com',
 
-  // Add your own custom user variables here, ie:
   subscriptionType: 'pro'
 })
-
-/*const AppSidebar = () => (
-  <>
-    <Sidebar />
-    <Outlet />
-  </>
-)
-*/
 
 function App() {
   const [accCookies, setAccCookies] = useState(false)
@@ -32,15 +23,15 @@ function App() {
   return (
     <CookieAccContext.Provider value={{ accCookies, setAccCookies }}>
       <div className="App">
-          <Sidebar />
-          <Routes>
-            <Route path="/" element={<Welcome />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </CookieAccContext.Provider>
   )
 }
