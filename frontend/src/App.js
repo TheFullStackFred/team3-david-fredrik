@@ -32,7 +32,6 @@ function App() {
   return (
     <CookieAccContext.Provider value={{ accCookies, setAccCookies }}>
       <div className="App">
-        <div className="pages">
           <Sidebar />
           <Routes>
             <Route path="/" element={<Welcome />} />
@@ -42,7 +41,6 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-      </div>
     </CookieAccContext.Provider>
   )
 }

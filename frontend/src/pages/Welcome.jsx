@@ -8,15 +8,15 @@ const Welcome = () => {
   const cookieAcc = useContext(CookieAccContext)
 
   return (
-    <div className='welcome'>
+    <div className="welcome">
       {!cookieAcc.accCookies && <Cookies />}
       {cookieAcc.accCookies && (
         <>
           <CdnImage />
-          <div className='link'>
+          <div className="link">
             {
               <Link to={'/home'}>
-                <button className='btn get-started-btn'>Get started</button>
+                <button className="btn get-started-btn">Get started</button>
               </Link>
             }
           </div>

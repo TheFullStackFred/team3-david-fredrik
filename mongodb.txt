@@ -47,5 +47,6 @@
         "stage3": "enjoys playing Minecraft",
         "stage4": "and going clubbing",
         "stage5": "Everything has to come to an end, sometime."
+
     }
 ]
