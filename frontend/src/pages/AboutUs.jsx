@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
     <section className="about-us">
-      <div class="profile-card">
+      <div className="profile-card">
         <header>
           <img
             src="https://avatars.githubusercontent.com/u/90246884?v=4"
@@ -12,7 +12,7 @@ const AboutUs = () => {
           <h2>DEVELOPER</h2>
         </header>
 
-        <div class="profile-bio">
+        <div className="profile-bio">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
             sed unde consectetur! Amet debitis quibusdam pariatur rerum quas
@@ -21,7 +21,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div class="profile-card">
+      <div className="profile-card">
         <header>
           <img
             src="https://avatars.githubusercontent.com/u/95115610?v=4"
@@ -33,7 +33,7 @@ const AboutUs = () => {
           <h2>DEVELOPER</h2>
         </header>
 
-        <div class="profile-bio">
+        <div className="profile-bio">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
             qui dignissimos doloribus est voluptatem eius unde error laudantium

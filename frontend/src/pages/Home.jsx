@@ -34,7 +34,7 @@ const Home = () => {
         <div className="story-card">
           {stories
             ? stories?.map((story) => {
-                if (!story.stage1) return null
+                // if (!story.stage1) return null
                 return (
                   <h2
                     key={story._id}
