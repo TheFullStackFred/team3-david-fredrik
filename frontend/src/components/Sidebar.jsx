@@ -16,7 +16,7 @@ const Sidebar = () => {
       className: 'sidebar-text'
     },
     {
-      title: 'Home',
+      title: 'Create story',
       path: '/home',
       icon: <AiIcons.AiOutlineHome />,
       className: 'sidebar-text'
