@@ -9,47 +9,48 @@
     {   "stage1": "Let me tell you the story of",
         "stage2": "in an ancient kingdom",
         "stage3": "an innocent boy called Adam",
-        "stage4": "watched the telly",
+        "stage4": "watched Netflix",
         "stage5": "and they all lived happily ever after"
     },
     {   "stage1": "In times past",
         "stage2": "in an apartment in Frölunda",
         "stage3": "a noble prince called Adam",
-        "stage4": "stayed home",
+        "stage4": "flexing his biceps",
         "stage5": "to be continued"
     },
     {
         "stage1": "There was a once a story of",
-        "stage2": "in a car",
+        "stage2": "in a red sportscar",
         "stage3": "a frog called Adam",
         "stage4": "hung out with FatStack",
         "stage5": "the end has no end"
     },
     {
-        "stage1": "A long time ago",
-        "stage2": "a fine young man called Mahdi",
-        "stage3": "and he loves to benchpress",
-        "stage4": "and chasing girls",
-    },
-    {
-        "stage2": "of an enthusistic web developer named Mahdi",
-        "stage3": "he enjoys eating protein bars",
-        "stage4": "and Pokemon Go!",
+        "stage1": "My grandpa once told me about",
+        "stage2": "on an island in the Caribbean",
+        "stage3": "an enthusistic web developer named Mahdi",
+        "stage4": "he enjoys eating protein bars",
         "stage5": "but in the end it doesn't even matter."
     },
     {
-        "stage2": "a playboy called Adam",
-        "stage3": "and he can't help swiping right on Tinder",
-        "stage4": "and show off his biceps",
+        "stage1": "Legend has it",
+        "stage2": "in Buckingham Palace",
+        "stage3": "a playboy called Adam",
+        "stage4": "sat swiping right on Tinder",
+        "stage5": "he got married and two kids and a dog"
     },
     {
-        "stage2": "a Peaky Blinder named Mahdi",
-        "stage3": "in a villa in Ibiza",
-        "stage4": "and going clubbing",
+        "stage1": "Last Christmas",
+        "stage2": "in a villa in Ibiza",
+        "stage3": "a Peaky Blinder named Mahdi",
+        "stage4": "played Valorant",
+        "stage5": "he moved to New Zealand"
     },
+    {
         "stage1": "In the cold winter months of 2022",
         "stage2": "sat a bunch of confused students in Tetris",
-        "stage2":  "as their teacher Dawid",
-        "stage4": "had the hopeless task to try and teach the complex world of the 12 Factor App",
+        "stage3":  "as their teacher Dawid",
+        "stage4": "tried teach the complex world of the 12 Factor App",
         "stage5": "Both students and teacher survived to share the story"
+    }
 ]
