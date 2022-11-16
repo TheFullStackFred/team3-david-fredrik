@@ -1,11 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
 import CookieAccContext from './CookieAccContext'
+import Sidebar from './components/Sidebar'
+import Footer from './components/Footer'
 import Welcome from './pages/Welcome'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import Contact from './pages/Contact'
-import Sidebar from './components/Sidebar'
 import NotFound from './pages/NotFound'
 import LogRocket from 'logrocket'
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </div>
     </CookieAccContext.Provider>
   )
