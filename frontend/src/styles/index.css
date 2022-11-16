@@ -221,46 +221,6 @@ textarea {
   cursor: pointer;
 }
 
-/* About */
-/* .about-column {
-  float: left;
-  width: 50%;
-  margin-bottom: 16px;
-  padding: 8px 0px;
-}
-
-.about-card {
-  margin: 10px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  color: white;
-}
-
-.about-title {
-  color: #e6521c;
-  margin: 5px;
-}
-
-.lorem-text {
-  margin: 5px;
-}
-
-.about-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #e6521c;
-  text-align: center;
-  cursor: pointer;
-  width: 25%;
-  margin-top: 10px;
-} */
-
 .about-us {
   display: flex;
   justify-content: center;
