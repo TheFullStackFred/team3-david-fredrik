@@ -56,7 +56,7 @@ const Sidebar = () => {
           {sideMenu.map((data, index) => {
             return (
               <li key={index} className={data.name}>
-                <Link class to={data.path}>
+                <Link to={data.path}>
                   <span className="link-icon">
                     {data.icon} {data.title}
                   </span>
